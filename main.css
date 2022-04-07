@@ -1,0 +1,130 @@
+/* Heading and button font */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+/* Main text font */
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+
+/* Background image control */
+.background{
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Ensure some space from the edge of the page */
+body{
+    padding: 50px;
+}
+
+/* Put my footer to the right of the page at the bottom */
+.footer {
+    bottom : 0;
+    height : 40px;
+    margin-top : 20px;
+    text-align: right;
+    color: hsl(0, 0%, 59%);
+    
+}
+
+/* Large containers of text */
+.section{
+    font-family: 'Eagle Lake', cursive;
+    background-color: rgb(91, 114, 96);
+    padding: 20px;
+    color: rgb(39, 25, 42);
+    opacity: 90%;
+    font-size: 24px;
+    border: 3px;
+    border-style :solid  ;
+    border-radius: 20px;
+}
+
+/* Headings, and subheadings */
+#title {
+    padding-top: 50px;
+    /* font-family: 'Piedra', cursive; */
+    font-family: 'Courgette', cursive;
+    font-size: 64px;
+    color: rgb(184, 144, 201);
+}
+#sub_headings {
+    /* Font  */
+    font-family: 'Courgette', cursive;
+    color: rgb(184, 144, 201);
+    font-size: 42px;
+}
+
+/* Link underline removal */
+a:visited, a:link, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color:rgb(0, 0, 0);
+}
+
+/*Nav bar positioning, and bottom styles*/
+.navbar{
+    display: flex;
+    /* min-height: 100px; */
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+
+    
+    background-position: center;  
+    /* text-align: right;  */
+}
+button{
+    font-family: 'Courgette', cursive;
+    
+    width: 15%;
+    height: 60px;
+    border-radius: 20px;
+    opacity: 80%;
+    background-color: rgb(244, 255, 246);
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(221, 39, 242);
+}
+
+
+/* This is for my collapsible boxes in the FAQ and Mistakes Pages */
+.collapsible {    
+    font-family: 'Courgette', cursive;
+    border-radius: 0%;
+    opacity: 80%;
+    background-color: rgb(18, 70, 28);
+    color: rgb(184, 144, 201);
+    cursor: pointer;
+    padding: 36px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 36px;
+    height: fit-content;
+    border-radius: 20px;
+}
+
+.collapsible:active{
+    background-color: rgb(18, 70, 28);    
+} 
+.collapsible:hover {
+    background-color: rgb(67, 99, 73);
+}
+
+.expanded_content {    
+    font-family: 'Eagle Lake', cursive;
+    background-color: rgb(91, 114, 96);
+    opacity: 80%;
+    padding: 28px;
+    font-size: 24px;
+    color: rgb(39, 25, 42);
+    display: none;
+    overflow: hidden;
+    border-radius: 20px;    
+}
+
+
